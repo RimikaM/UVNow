@@ -4,25 +4,22 @@ struct ContentView: View {
     @State private var uvViewModel     = UVViewModel()
     @State private var historyViewModel = HistoryViewModel()
 
+    var preferredColorScheme: ColorScheme? {
+        switch uvViewModel.colorSchemeRaw {
+        case 1: return .light
+        case 2: return .dark
+        default: return nil
+        }
+    }
+
     var body: some View {
         NowTab(viewModel: uvViewModel)
-//        TabView {
-//            NowTab(viewModel: uvViewModel)
-//                .tabItem { Label("Now", systemImage: "sun.max") }
-//
-//            HistoryView(uvViewModel: uvViewModel, historyViewModel: historyViewModel)
-//                .tabItem { Label("History", systemImage: "chart.line.uptrend.xyaxis") }
-//        }
-//        // ContentView owns both view models, so this .task reliably fires
-//        // whenever coordinates change — even while History tab is inactive.
-//        .task(id: "\(uvViewModel.latitude ?? 0),\(uvViewModel.longitude ?? 0)") {
-//            guard let lat = uvViewModel.latitude, let lon = uvViewModel.longitude else { return }
-//            await historyViewModel.load(latitude: lat, longitude: lon)
-//        }
+            .preferredColorScheme(preferredColorScheme)
+            .task { await uvViewModel.restoreSavedLocation() }
     }
 }
 
-// MARK: - Now tab (extracted so TabView doesn't re-init it)
+// MARK: - Now tab
 
 private struct NowTab: View {
     let viewModel: UVViewModel
@@ -81,6 +78,23 @@ private struct NowTab: View {
             }
             .navigationTitle("UV Now")
             .navigationBarTitleDisplayMode(.inline)
+            .toolbar {
+                ToolbarItem(placement: .topBarTrailing) {
+                    Button {
+                        viewModel.colorSchemeRaw = (viewModel.colorSchemeRaw + 1) % 3
+                    } label: {
+                        Image(systemName: colorSchemeIcon(viewModel.colorSchemeRaw))
+                    }
+                }
+            }
+        }
+    }
+
+    private func colorSchemeIcon(_ raw: Int) -> String {
+        switch raw {
+        case 1: return "sun.max.fill"
+        case 2: return "moon.fill"
+        default: return "circle.lefthalf.filled"
         }
     }
 }

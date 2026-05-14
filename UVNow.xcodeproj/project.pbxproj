@@ -12,6 +12,7 @@
 		21520439109BD792EB3F8AAD /* GeocoderService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 142435A9387C59AC5FF65373 /* GeocoderService.swift */; };
 		221B4F2F15C480F3192F886F /* FitzpatrickType.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2AF6C91FFF7F1B68C7F0290 /* FitzpatrickType.swift */; };
 		2B6DF0E6D00B275288B01B46 /* UVLevel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBDB3C32913D15F7B9776198 /* UVLevel.swift */; };
+		39B489CC66AF0F746AD51DB4 /* WeatherKitService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CCE8F7DE23767C468E7EF13 /* WeatherKitService.swift */; };
 		541EE2F06D1751BC844E8B26 /* UVNowApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = B02BD089E82D91F14223B665 /* UVNowApp.swift */; };
 		55466512B703CD5CDB381EB8 /* OpenUVService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2500B591102412AE79C73F01 /* OpenUVService.swift */; };
 		58D1A54DCEBF6B598DD841CF /* HistoryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5EBC7C19DA21C3940EC0AC4 /* HistoryView.swift */; };
@@ -26,21 +27,25 @@
 		BD176FEDF9A3295EF7DF72D1 /* UVService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82BF1720285CFF03D9619BE3 /* UVService.swift */; };
 		BD37E9993BC69BDAFB98A45B /* YearlyTrendChart.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2CF8AD6ABD7685BBB826803 /* YearlyTrendChart.swift */; };
 		CDF85B5DABB3D76B0C7A1FA5 /* LocationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BC2D48ED4E4277F4ECB124F /* LocationManager.swift */; };
+		DBAB5120520925DEF8207E7C /* LocationSearchCompleter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 617F825949EEC331E15FF640 /* LocationSearchCompleter.swift */; };
 		E0E8F976D21A69A09B8B4E57 /* HistoricalUVService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F07234A189041C2A2BA3F4E /* HistoricalUVService.swift */; };
 		F55E34D17D77C2731A9443C0 /* UVGaugeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A62DBD8B45058767CACF4DBE /* UVGaugeView.swift */; };
 		F7D4CFB71BB85A6F4DD6AF7B /* Config.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76EC85CE472EC219E126D69B /* Config.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		0113229A0B0F6247EE7E3B2D /* UVNow.app */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = wrapper.application; path = UVNow.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		0113229A0B0F6247EE7E3B2D /* UVNow.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = UVNow.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		142435A9387C59AC5FF65373 /* GeocoderService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeocoderService.swift; sourceTree = "<group>"; };
 		1B7CB0BB2807539859D32F22 /* UVViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UVViewModel.swift; sourceTree = "<group>"; };
 		1F07234A189041C2A2BA3F4E /* HistoricalUVService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoricalUVService.swift; sourceTree = "<group>"; };
+		1F2AFA306FBE1E3C15CBDC24 /* UVNow.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = UVNow.entitlements; sourceTree = "<group>"; };
 		2500B591102412AE79C73F01 /* OpenUVService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OpenUVService.swift; sourceTree = "<group>"; };
 		3BC2D48ED4E4277F4ECB124F /* LocationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationManager.swift; sourceTree = "<group>"; };
 		44C17FED0AB1046B84C5E1F7 /* HistoryViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryViewModel.swift; sourceTree = "<group>"; };
 		5E6CBD09253BDDCEDE34E5BA /* UVReading.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UVReading.swift; sourceTree = "<group>"; };
+		617F825949EEC331E15FF640 /* LocationSearchCompleter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationSearchCompleter.swift; sourceTree = "<group>"; };
 		76EC85CE472EC219E126D69B /* Config.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Config.swift; sourceTree = "<group>"; };
+		7CCE8F7DE23767C468E7EF13 /* WeatherKitService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherKitService.swift; sourceTree = "<group>"; };
 		82BF1720285CFF03D9619BE3 /* UVService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UVService.swift; sourceTree = "<group>"; };
 		833BC607967D6EC6EB4ECA83 /* SkinTonePickerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SkinTonePickerView.swift; sourceTree = "<group>"; };
 		8781FAAD76DBE1A61DC6BD15 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -81,8 +86,10 @@
 				142435A9387C59AC5FF65373 /* GeocoderService.swift */,
 				1F07234A189041C2A2BA3F4E /* HistoricalUVService.swift */,
 				3BC2D48ED4E4277F4ECB124F /* LocationManager.swift */,
+				617F825949EEC331E15FF640 /* LocationSearchCompleter.swift */,
 				2500B591102412AE79C73F01 /* OpenUVService.swift */,
 				82BF1720285CFF03D9619BE3 /* UVService.swift */,
+				7CCE8F7DE23767C468E7EF13 /* WeatherKitService.swift */,
 			);
 			path = Services;
 			sourceTree = "<group>";
@@ -128,6 +135,7 @@
 			children = (
 				76EC85CE472EC219E126D69B /* Config.swift */,
 				F4A34A2D51713A5E9614CCDB /* Info.plist */,
+				1F2AFA306FBE1E3C15CBDC24 /* UVNow.entitlements */,
 				B02BD089E82D91F14223B665 /* UVNowApp.swift */,
 				8B4C7FF17DD977EA7F1AB4EC /* Models */,
 				332D4DDAA0FF3EE6A7FAB3C8 /* Services */,
@@ -165,8 +173,6 @@
 			attributes = {
 				BuildIndependentTargetsInParallel = YES;
 				LastUpgradeCheck = 1430;
-				TargetAttributes = {
-				};
 			};
 			buildConfigurationList = 9A565E84567DB5E0B4DD79A6 /* Build configuration list for PBXProject "UVNow" */;
 			developmentRegion = en;
@@ -201,6 +207,7 @@
 				1D480278B3FD04F069565F52 /* HistoryViewModel.swift in Sources */,
 				B0FF949E12CD3F219CA00D3C /* HourlyUVChart.swift in Sources */,
 				CDF85B5DABB3D76B0C7A1FA5 /* LocationManager.swift in Sources */,
+				DBAB5120520925DEF8207E7C /* LocationSearchCompleter.swift in Sources */,
 				74AAE64C25AD6B70DCDC7DEE /* LocationSearchView.swift in Sources */,
 				5CCB39D6A81D4CF6E96E1D67 /* MonthlyUVSummary.swift in Sources */,
 				55466512B703CD5CDB381EB8 /* OpenUVService.swift in Sources */,
@@ -213,6 +220,7 @@
 				191C5B3296F7E9BFFBB842B8 /* UVReading.swift in Sources */,
 				BD176FEDF9A3295EF7DF72D1 /* UVService.swift in Sources */,
 				AEB9DD4B7504CD4ACB7BE846 /* UVViewModel.swift in Sources */,
+				39B489CC66AF0F746AD51DB4 /* WeatherKitService.swift in Sources */,
 				BD37E9993BC69BDAFB98A45B /* YearlyTrendChart.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -280,7 +288,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = UVNow/UVNow.entitlements;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
+				DEVELOPMENT_TEAM = 7KTCV84364;
 				ENABLE_HARDENED_RUNTIME = YES;
 				INFOPLIST_FILE = UVNow/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
@@ -363,7 +373,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = UVNow/UVNow.entitlements;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
+				DEVELOPMENT_TEAM = 7KTCV84364;
 				ENABLE_HARDENED_RUNTIME = YES;
 				INFOPLIST_FILE = UVNow/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 17.0;

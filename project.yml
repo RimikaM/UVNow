@@ -12,12 +12,18 @@ targets:
     platform: iOS
     deploymentTarget: "17.0"
     sources:
-      - UVNow
+      - path: UVNow
+        excludes:
+          - Config.template.swift
     info:
       path: UVNow/Info.plist
       properties:
         CFBundleDisplayName: UV Now
         NSLocationWhenInUseUsageDescription: UVNow uses your location to show the current UV index.
+    entitlements:
+      path: UVNow/UVNow.entitlements
+      properties:
+        com.apple.developer.weatherkit: true
     settings:
       PRODUCT_BUNDLE_IDENTIFIER: com.rimikamajumdar.UVNow
       SWIFT_VERSION: 6.0
